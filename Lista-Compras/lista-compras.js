@@ -1,16 +1,23 @@
 let compras = JSON.parse(localStorage.getItem("compras")) || [];
 
-function comprar() {
-  let continuar = true;
-  while (continuar) {
-    let item = prompt("Digite um item:");
-    if (item && item.trim() !== "") {
-      compras.push(item.trim());
-    }
-    let resposta = prompt("Adicionar outro item? (s/n)");
-    if (!resposta || resposta.toLowerCase() !== "s") continuar = false;
+function mostrarInput() {
+  const inputArea = document.getElementById("inputArea");
+  inputArea.style.display = "block";
+  document.getElementById("novoItem").focus();
+}
+
+function adicionarItem() {
+  const input = document.getElementById("novoItem");
+  const item = input.value.trim();
+  if (item) {
+    compras.push(item);
+    localStorage.setItem("compras", JSON.stringify(compras));
+    atualizarLista();
+    input.value = ""; // limpa o campo
+    input.focus();
+  } else {
+    alert("Digite algum item antes de adicionar!");
   }
-  localStorage.setItem("compras", JSON.stringify(compras));
 }
 
 function atualizarLista() {
@@ -27,6 +34,8 @@ function limparLista() {
   compras = [];
   localStorage.removeItem("compras");
   atualizarLista();
+  // Esconder área de input quando limpar
+  document.getElementById("inputArea").style.display = "none";
 }
 
 window.addEventListener("DOMContentLoaded", atualizarLista);

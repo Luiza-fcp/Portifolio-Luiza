@@ -9,11 +9,19 @@
 
   <h1> Lista de Compras</h1>
   <div class="card">
-  <button onclick="comprar()">Adicionar Itens</button>
+  <button onclick="mostrarInput()">Adicionar Itens</button>
   <button onclick="atualizarLista()">Ver Lista</button>
   <button onclick="limparLista()">Limpar Lista</button>
-  <ul id="listaCompras"></ul>
+
+  <!-- Área para digitar o item -->
+  <div id="inputArea" style="display:none; margin-top: 20px;">
+    <input type="text" id="novoItem" placeholder="Digite um item" />
+    <button onclick="adicionarItem()">Adicionar</button>
   </div>
+
+  <ul id="listaCompras"></ul>
+</div>
+
   <br>
   <script src="/Lista-Compras/lista-compras.js"></script>
 
