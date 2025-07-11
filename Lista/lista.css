@@ -1,0 +1,110 @@
+body {
+  font-family: 'Comic Sans MS', cursive;
+  background: linear-gradient(  #ffe6f0);
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+}
+
+h1 {
+  color: #ff77aa;
+  font-size: 3rem;
+  margin: 30px 0 10px;
+  text-shadow: 1px 1px #ffcce5;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(246, 140, 165, 0.746);
+  max-width: 420px;
+  width: 150%;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 90px;
+}
+
+input, button {
+  width: 80%;
+  margin: 15px 0;
+  padding: 14px;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  box-shadow: 0 1px 2px rgba(246, 140, 165, 0.746);
+}
+
+#novoItem {
+  width: 300px;
+  border: 1px solid #efefef;
+  outline: none;
+  font-family: 'Comic Sans MS', cursive;
+  color: #f69bbc; /* texto rosa */
+}
+#novoItem::placeholder {
+  color: #f9dae3;
+}
+
+button {
+  background-color: #ffb6cb;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+button:hover {
+  background-color: #d9869e;
+  transform: scale(1.03);
+}
+
+
+  
+  #lista li {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #ff8db4;
+  }
+  
+  .checkboxCustom {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #f69bbc;
+    border-radius: 5px;
+    margin-right: 10px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .checkboxCustom:hover {
+    background-color: #ffe2eb;
+    box-shadow: 0 0 5px #ee8bb0;
+  }
+  
+  .checkboxCustom:checked {
+    background-color: #f69bbc;
+    border-color: #f69bbc;
+  }
+  
+  .checkboxCustom:checked::after {
+    content: "✓";
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+  left: 50%;
+  transform: translate(-50%, -55%);
+  font-size: 35px;
+  pointer-events: none;
+}
+
+.voltar {
+  width: 200px; 
+  padding: 10px;
+  font-size: 1.2rem;
+  background-color: #fca3c0;
+  margin-top: -3%;
+  }

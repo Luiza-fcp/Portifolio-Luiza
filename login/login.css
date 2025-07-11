@@ -8,7 +8,6 @@ body {
   padding: 20px;
   font-size: 20px;
 }
-
 h1 {
   color: #ff77aa;
   font-size: 3rem;
@@ -16,11 +15,21 @@ h1 {
   text-shadow: 1px 1px #ffcce5;
 }
 
-.loginContainer {
-  color: #ff99cc;
+.card {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(246, 140, 165, 0.746);
+  max-width: 420px;
+  width: 150%;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 90px;
 }
 
+
 .loginContainer {
+  color: #ff99cc;
   background-color: #ffffff;
   padding: 25px;
   border-radius: 20px;
@@ -31,3 +40,31 @@ h1 {
   margin-top: 40px;
   margin-bottom: 90px;
 }
+
+
+button {
+  background-color: #ffb6cb;
+  width: 80%;
+  margin: 15px 0;
+  padding: 14px;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  box-shadow: 0 1px 2px rgba(246, 140, 165, 0.746);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+button:hover {
+  background-color: #d9869e;
+  transform: scale(1.03);
+}
+
+.entrar {
+  width: 200px; 
+  padding: 10px;
+  font-size: 1.2rem;
+  background-color: #fca3c0;
+  margin-top: -3%;
+  }

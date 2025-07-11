@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Lista de Compras</title>
+  <title>Lista</title>
 
-  <link rel="stylesheet" href="/Lista-Compras/lista-compras.css">
+  <link rel="stylesheet" href="/Lista/lista.css">
 </head>
 <body>
 
-  <h1> Lista de Compras</h1>
+  <h1> Lista</h1>
   <div class="card">
   <button onclick="mostrarInput()">Adicionar Itens</button>
   <button onclick="atualizarLista()">Ver Lista</button>
@@ -17,14 +17,14 @@
   <div id="inputArea" style="display:none; margin-top: 20px;">
     <input type="text" id="novoItem" placeholder="Digite um item" />
     <button onclick="adicionarItem()">Adicionar</button>
-  </div>
+  </div> 
 
-  <ul id="listaCompras"></ul>
+  <ul id="lista"></ul>
 </div>
 
   <br>
-  <script src="/Lista-Compras/lista-compras.js"></script>
-
+  <script src="/Lista/lista.js"></script>
+  <button class="voltar" onclick="location.href='/index.html'">Voltar</button>
 </body>
 </html>
  
